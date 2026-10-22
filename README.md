@@ -1,15 +1,15 @@
 
 <div align="center">
 
-# 🔴 VICTOR PORTSCAN
+<img src="./banner_cyberpunk_victor_portscan.png" width="100%" alt="VICTOR PORTSCAN">
 
-### Fast & Powerful TCP Port Scanner
+<h1>🔴 VICTOR PORTSCAN</h1>
 
-**Desenvolvido e personalizado por VICTOR**
+<strong>Fast & Powerful TCP Port Scanner</strong>
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Platform](https://img.shields.io/badge/Platform-Windows-red)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+<p>Desenvolvido por VICTOR</p>
+
+</div>
 
 ---
 
