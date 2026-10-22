@@ -1,23 +1,23 @@
+ <div align="center">
 
-<div align="center">
-
-<img src="./banner_cyberpunk_victor_portscan.png" width="100%" alt="VICTOR PORTSCAN">
+<img src="./banner_cyberpunk_victor_portscan.png" width="100%" alt="VICTOR PORTSCAN Banner">
 
 # VICTOR PORTSCAN
 
 ### Fast & Powerful TCP Port Scanner
 
-**Scanner de portas TCP desenvolvido em Python**
+**A Python-based TCP port scanner built for speed, simplicity, and network analysis**
 
 <p>
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/Windows-Compatible-0078D6?style=for-the-badge&logo=windows&logoColor=white">
-  <img src="https://img.shields.io/badge/Status-Active-00C853?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
 
-**Developed & Customized by VICTOR**
+**Developed by VICTOR**
 
-[GitHub](https://github.com/vrntv177) • [Repository](https://github.com/vrntv177/Portscan)
+[Developer](https://github.com/vrntv177) • [Source Code](https://github.com/vrntv177/Portscan)
 
 </div>
 
@@ -25,55 +25,61 @@
 
 ## 📌 Overview
 
-**Victor PortScan** é uma ferramenta de escaneamento de portas TCP desenvolvida em Python para análise de conectividade, estudos de redes e auditorias de segurança autorizadas
+**VICTOR PORTSCAN** is a Python-based TCP port scanning tool designed for network diagnostics, connectivity testing, and authorized security assessments
 
-O projeto combina execução multithread, configurações personalizáveis e uma interface de terminal com identidade visual própria
+The project combines multithreaded scanning, configurable parameters, and a custom terminal interface to provide a straightforward network analysis experience
 
-### ✨ Destaques
+### Key Highlights
 
-- ⚡ Escaneamento de portas TCP
-- 🔍 Identificação de portas abertas
-- 🌐 Compatibilidade com IPs e domínios
-- 🧵 Execução simultânea com múltiplas threads
-- ⏱️ Timeout configurável
-- 📁 Exportação de resultados
-- 🔥 Modo de varredura Top 10K
-- 🎨 Interface ASCII personalizada
-- 💻 Suporte ao Windows PowerShell
-
----
-
-## 🖥️ Interface
-
-O Victor PortScan possui um banner exclusivo com arte ASCII em vermelho e branco, acompanhado da assinatura `by VICTOR`
-
-<div align="center">
-
-<img src="./banner_cyberpunk_victor_portscan.png" width="85%" alt="Interface Victor PortScan">
-
-</div>
+- Fast TCP port scanning
+- Open port detection
+- IP address and hostname support
+- Multithreaded execution
+- Customizable connection timeouts
+- Scan result export
+- Top 10K port scanning mode
+- Custom ASCII terminal banner
+- Windows PowerShell compatibility
 
 ---
 
-## 📦 Instalação
+## ✨ Features
 
-### 1. Clone o repositório
+| Feature | Description |
+|:---|:---|
+| TCP Scanning | Detect open TCP ports on a target |
+| Multithreading | Scan multiple ports concurrently |
+| Custom Timeout | Adjust connection timeout settings |
+| Top 10K Mode | Scan a larger set of commonly used ports |
+| Result Export | Save scanning results to a file |
+| Custom Interface | Personalized ASCII art and terminal output |
+| CLI Support | Run scans directly from the command line |
+
+---
+
+## 📦 Installation
+
+### Requirements
+
+- Python 3.x
+- Windows PowerShell or a compatible terminal
+- Git (optional, for cloning the repository)
+
+### Step 1 — Clone the repository
 
 ```bash
 git clone https://github.com/vrntv177/Portscan.git
 ```
 
-### 2. Entre na pasta
+### Step 2 — Navigate to the project
 
 ```bash
 cd Portscan
 ```
 
-### 3. Instale as dependências
+### Step 3 — Install dependencies
 
-Tenha o Python 3 instalado
-
-Caso sua versão utilize a biblioteca `pythonping`, execute:
+If your version requires `pythonping`, install it using:
 
 ```bash
 py -m pip install pythonping
@@ -81,39 +87,41 @@ py -m pip install pythonping
 
 ---
 
-## 🚀 Como utilizar
+## 🚀 Usage
 
-### Escaneamento básico
+### Basic Scan
 
 ```bash
 py portscan_victor.py -t 127.0.0.1
 ```
 
-### Modo Top 10K
+### Scan Top 10K Ports
 
 ```bash
 py portscan_victor.py -t 127.0.0.1 --top-10k
 ```
 
-### Timeout personalizado
+### Custom Timeout
+
+Set a connection timeout of 240 milliseconds:
 
 ```bash
 py portscan_victor.py -t 127.0.0.1 --timeout 240
 ```
 
-### Configurar threads
+### Custom Thread Count
 
 ```bash
 py portscan_victor.py -t 127.0.0.1 --threads 50
 ```
 
-### Salvar resultados
+### Export Scan Results
 
 ```bash
-py portscan_victor.py -t 127.0.0.1 -o resultado.txt
+py portscan_victor.py -t 127.0.0.1 -o results.txt
 ```
 
-### Exibir ajuda
+### Display Help
 
 ```bash
 py portscan_victor.py --help
@@ -121,20 +129,20 @@ py portscan_victor.py --help
 
 ---
 
-## ⚙️ Parâmetros
+## ⚙️ Command-Line Arguments
 
-| Parâmetro | Descrição |
+| Argument | Description |
 |:---|:---|
-| `-t, --target` | IP ou domínio de destino |
-| `--timeout` | Tempo limite por porta em milissegundos |
-| `--threads` | Número de threads simultâneas |
-| `-o, --output` | Arquivo para salvar os resultados |
-| `--top-10k` | Habilita a lista Top 10K |
-| `-h, --help` | Exibe os comandos disponíveis |
+| `-t, --target` | Target IP address or hostname |
+| `--timeout` | Connection timeout in milliseconds |
+| `--threads` | Number of concurrent scanning threads |
+| `-o, --output` | Save results to an output file |
+| `--top-10k` | Enable Top 10K port scanning |
+| `-h, --help` | Display available commands |
 
 ---
 
-## 📊 Exemplo de execução
+## 📊 Example Output
 
 ```text
 [ PINGING ON DOMAIN... ]
@@ -145,77 +153,93 @@ Threads = 30
 
 [ RESULTS ]
 
-[+] 80    → Open
-[+] 443   → Open
-[+] 8080  → Open
+[+] 80    -> Open
+[+] 443   -> Open
+[+] 8080  -> Open
 
 [#] 3 Open ports
 [i] Scan completed
 ```
 
-> Exemplo ilustrativo. As portas identificadas dependem do alvo e dos serviços disponíveis
+> This is an illustrative example. Actual results depend on the target and its available services
 
 ---
 
-## 🗂️ Estrutura do projeto
+## 🗂️ Project Structure
 
 ```text
 Portscan/
 │
 ├── portscan_victor.py
 ├── banner_cyberpunk_victor_portscan.png
+├── LICENSE
 └── README.md
 ```
 
 ---
 
-## 🛠️ Tecnologias
+## 🛠️ Technologies
 
-| Tecnologia | Finalidade |
+| Technology | Purpose |
 |:---|:---|
-| Python | Desenvolvimento |
-| Socket | Conexões TCP |
-| Threading | Processamento simultâneo |
-| Argparse | Argumentos de linha de comando |
-| ANSI / ASCII | Personalização do terminal |
+| Python | Core development |
+| Sockets | TCP network connections |
+| Threading | Concurrent execution |
+| Argparse | Command-line argument handling |
+| ANSI / ASCII | Terminal interface customization |
 
 ---
 
-## 🎯 Objetivos
+## 🎯 Project Goals
 
-O projeto tem como principais objetivos:
+VICTOR PORTSCAN was developed to explore and improve practical knowledge in:
 
-- Aprimorar conhecimentos em Python
-- Estudar comunicação TCP/IP
-- Explorar programação multithread
-- Desenvolver ferramentas de diagnóstico de rede
-- Criar uma interface de terminal personalizada
-
----
-
-## 🔮 Futuras melhorias
-
-- [ ] Identificação de serviços por porta
-- [ ] Exportação em JSON e CSV
-- [ ] Barra de progresso
-- [ ] Interface interativa
-- [ ] Relatórios de escaneamento
-- [ ] Melhorias de desempenho
-- [ ] Suporte multiplataforma
+- Python programming
+- TCP/IP networking
+- Socket communication
+- Multithreaded applications
+- Network diagnostics
+- Command-line tool development
 
 ---
 
-## ⚠️ Aviso legal
+## 🔮 Roadmap
 
-O Victor PortScan foi disponibilizado para fins educacionais, diagnósticos de conectividade e auditorias autorizadas
+Potential improvements for future releases:
 
-**Utilize esta ferramenta somente em sistemas próprios ou com autorização explícita dos responsáveis**
-
-Uma porta aberta não representa necessariamente uma vulnerabilidade de segurança
+- [ ] Service detection
+- [ ] JSON and CSV export
+- [ ] Real-time progress bar
+- [ ] Interactive terminal interface
+- [ ] Advanced scanning reports
+- [ ] Performance optimization
+- [ ] Cross-platform improvements
 
 ---
 
-## 👨‍💻 Desenvolvedor
+## 🔐 Security & Responsible Usage
+
+**VICTOR PORTSCAN is intended for educational purposes, network diagnostics, and authorized security assessments only**
+
+Use this software exclusively on systems you own or have explicit permission to test
+
+An open port does not necessarily indicate a security vulnerability
+
+Users are responsible for complying with applicable laws and obtaining proper authorization before performing network scans
+
+---
+
+## 📜 License
+
+This project is distributed under the **MIT License**, to the extent that the project owner holds the necessary licensing rights
+
+See the [LICENSE](LICENSE) file for more information
+
+The MIT License requires preservation of the copyright and permission notices in copies or substantial portions of the licensed software
+
+---
+
+## 👨‍💻 Developer
 
 <div align="center">
 
@@ -227,12 +251,12 @@ Uma porta aberta não representa necessariamente uma vulnerabilidade de seguran�
 
 ---
 
-### 🔴 VICTOR PORTSCAN
+### VICTOR PORTSCAN
 
-**Fast • Powerful • TCP Scanner**
+**FAST • POWERFUL • CUSTOMIZABLE**
 
 Made with Python
 
-**© VICTOR**
+Copyright © 2026 VICTOR
 
 </div>
