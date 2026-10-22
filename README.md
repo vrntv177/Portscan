@@ -1,138 +1,149 @@
-
+ 
 <div align="center">
 
 <img src="./banner_cyberpunk_victor_portscan.png" width="100%" alt="VICTOR PORTSCAN">
 
-<h1>🔴 VICTOR PORTSCAN</h1>
+# 🔴 VICTOR PORTSCAN
 
-<strong>Fast & Powerful TCP Port Scanner</strong>
+**Fast & Powerful TCP Port Scanner**
 
-<p>Desenvolvido por VICTOR</p>
+Scanner de portas TCP em Python com interface personalizada
 
-</div>
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Platform](https://img.shields.io/badge/Platform-Windows-red?logo=windows)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+
+**by VICTOR**
 
 ---
-
-Scanner de portas TCP desenvolvido em Python,
-com execução multithread, terminal personalizado
-e identificação de portas abertas
 
 </div>
 
 ## 📌 Sobre o projeto
 
-O **Victor PortScan** é uma ferramenta de
-análise de portas TCP, desenvolvida para
-testes de conectividade e auditorias
-autorizadas de redes
+O **Victor PortScan** é uma ferramenta de análise de portas TCP desenvolvida em Python, voltada para testes de conectividade, estudos de redes e auditorias autorizadas de segurança
 
-Possui interface no terminal personalizada,
-com arte ASCII e sistema de verificação
-simultânea de portas
+Possui interface de terminal personalizada, arte ASCII, suporte a múltiplas threads e identificação de portas abertas
 
 ## 🚀 Funcionalidades
 
-- ⚡ Escaneamento de portas TCP
+- ⚡ Escaneamento rápido de portas TCP
 - 🔍 Identificação de portas abertas
-- 🌐 Suporte a IPs e domínios
-- 🧵 Escaneamento com múltiplas threads
+- 🌐 Suporte a endereços IP e domínios
+- 🧵 Execução com múltiplas threads
 - ⏱️ Timeout configurável
-- 📂 Exportação dos resultados
-- 🔥 Modo de varredura Top 10K
-- 🎨 Interface personalizada by VICTOR
+- 📂 Exportação de resultados para arquivo
+- 🔥 Modo de varredura `--top-10k`
+- 🎨 Banner ASCII personalizado com olhos vermelhos
+- 💻 Compatível com Windows e PowerShell
 
 ## 📥 Instalação
 
 Clone o repositório:
 
-    git clone https://github.com/vrntv177/Portscan.git
+```bash
+git clone https://github.com/vrntv177/Portscan.git
+```
 
-Entre na pasta:
+Acesse a pasta:
 
-    cd Portscan
+```bash
+cd Portscan
+```
 
-Instale a dependência, caso sua versão a utilize:
+Instale a biblioteca `pythonping` caso sua versão utilize essa dependência:
 
-    pip install pythonping
+```bash
+py -m pip install pythonping
+```
 
 ## 💻 Como utilizar
 
 **Escaneamento básico:**
 
-    py portscan.py -t 127.0.0.1
+```bash
+py portscan_victor.py -t 127.0.0.1
+```
 
-**Verificação de portas Top 10K:**
+**Varredura Top 10K:**
 
-    py portscan.py -t 127.0.0.1 --top-10k
+```bash
+py portscan_victor.py -t 127.0.0.1 --top-10k
+```
 
-**Configurar timeout:**
+**Definir timeout de 240 ms:**
 
-    py portscan.py -t 127.0.0.1 --timeout 240
+```bash
+py portscan_victor.py -t 127.0.0.1 --timeout 240
+```
 
-**Configurar threads:**
+**Utilizar 50 threads:**
 
-    py portscan.py -t 127.0.0.1 --threads 50
+```bash
+py portscan_victor.py -t 127.0.0.1 --threads 50
+```
 
-**Salvar resultados:**
+**Salvar resultados em arquivo:**
 
-    py portscan.py -t 127.0.0.1 -o resultado.txt
+```bash
+py portscan_victor.py -t 127.0.0.1 -o resultado.txt
+```
 
-**Visualizar todos os comandos:**
+**Visualizar comandos disponíveis:**
 
-    py portscan.py --help
+```bash
+py portscan_victor.py --help
+```
 
 ## ⚙️ Parâmetros
 
 | Comando | Descrição |
-|---------|-----------|
-| `-t` | IP ou domínio alvo |
-| `--timeout` | Timeout em milissegundos |
-| `--threads` | Quantidade de threads |
-| `-o` | Salvar resultados |
-| `--top-10k` | Verificar portas da lista Top 10K |
-| `-h` | Mostrar ajuda |
+|---|---|
+| `-t, --target` | IP ou domínio do alvo |
+| `--timeout` | Tempo limite em milissegundos |
+| `--threads` | Número de threads |
+| `-o, --output` | Salvar portas abertas em arquivo |
+| `--top-10k` | Ativar varredura Top 10K |
+| `-h, --help` | Exibir ajuda |
 
-## 🖥️ Exemplo de resultado
+## 📊 Exemplo de resultado
 
-    [ PINGING ON DOMAIN... ]
+```text
+[ PINGING ON DOMAIN... ]
 
-    Domain  = 127.0.0.1
-    Timeout = 118.72 ms
-    Threads = 30
+Domain  = 127.0.0.1
+Timeout = 240 ms
+Threads = 30
 
-    [ RESULTS ]
+[ RESULTS ]
 
-    [+] 80    → Open
-    [+] 443   → Open
-    [+] 8080  → Open
+[+] 80    → Open
+[+] 443   → Open
+[+] 8080  → Open
 
-    [#] 3 Open ports
+[#] 3 Open ports
+```
 
-*Exemplo ilustrativo: os resultados dependem
-dos serviços disponíveis no alvo*
+*Resultado meramente ilustrativo*
 
-## ⚠️ Aviso legal
+## 🔐 Segurança e responsabilidade
 
-Esta ferramenta foi disponibilizada para
-fins educacionais, testes de conectividade
-e auditorias de segurança autorizadas
+Esta ferramenta destina-se exclusivamente a fins educacionais, diagnósticos de conectividade e auditorias autorizadas
 
-Utilize somente em sistemas próprios ou
-com permissão explícita do responsável
 
-O desenvolvedor não se responsabiliza
-pelo uso indevido da ferramenta
+Utilize o scanner somente em sistemas próprios ou com autorização explícita de seus responsáveis
+
+Uma porta aberta não significa necessariamente que exista uma vulnerabilidade
 
 ## 👨‍💻 Créditos
+
+**Projeto:** Victor PortScan
 
 **Personalização e interface:** VICTOR
 
 **Linguagem:** Python
 
-**Projeto:** Victor PortScan
-
-Caso utilize código de terceiros, mantenha
-os créditos e respeite a licença original
+**Código-base:** Preserve os créditos dos autores originais, quando aplicável
 
 ---
 
@@ -140,6 +151,8 @@ os créditos e respeite a licença original
 
 ### 🔴 VICTOR PORTSCAN
 
-**Developed with Python | by VICTOR**
+**Fast • Powerful • TCP Port Scanner**
+
+**Made with Python | by VICTOR**
 
 </div>
