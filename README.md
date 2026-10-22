@@ -56,6 +56,17 @@ The project combines multithreaded scanning, configurable parameters, and a cust
 | CLI Support | Run scans directly from the command line |
 
 ---
+## 🖥️ Interface
+
+VICTOR PORTSCAN features a custom terminal-style visual identity, including a personalized ASCII-inspired cyberpunk banner used as part of the project presentation
+
+<div align="center">
+
+<img src="./banner_cyberpunk_victor_portscan.png" width="85%" alt="Victor PortScan Interface Banner">
+
+</div>
+
+The interface was designed to provide a unique visual style while keeping the command-line experience clean and recognizable
 
 ## 📦 Installation
 
