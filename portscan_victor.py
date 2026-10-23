@@ -151,7 +151,7 @@ class clr:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description=f'{clr.RED}Fast and Indiscreet Port Scan by HackStation{clr.RESET}'
+        description=f'{clr.RED}Fast and Indiscreet Port Scan by VICTOR{clr.RESET}'
     )
     parser.add_argument('-t', '--target', dest='host', required=True,
                         help='Target IP or domain')
